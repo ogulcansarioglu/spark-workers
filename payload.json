@@ -4,7 +4,7 @@
     "enableConfidentialCompute": false
   },
   "cpuPlatform": "Intel Broadwell",
-  "creationTimestamp": "2022-12-21T15:25:39.705-08:00",
+  "creationTimestamp": "2022-12-21T16:59:40.532-08:00",
   "deletionProtection": false,
   "description": "",
   "disks": [
@@ -25,9 +25,9 @@
       "licenses": [
         "projects/debian-cloud/global/licenses/debian-11-bullseye"
       ],
-      "deviceName": "slave-m",
+      "deviceName": "slavem-3",
       "autoDelete": true,
-      "source": "projects/soy-meridian-372320/zones/europe-west1-b/disks/slave-m",
+      "source": "projects/soy-meridian-372320/zones/europe-west1-b/disks/slavem-3",
       "index": 0,
       "boot": true,
       "kind": "compute#attachedDisk",
@@ -39,28 +39,24 @@
   "displayDevice": {
     "enableDisplay": false
   },
-  "fingerprint": "wYDXt9wpGMA=",
-  "id": "544743611700226844",
+  "fingerprint": "sva1M_NhFG8=",
+  "id": "6467197328960656660",
   "keyRevocationActionType": "STOP",
   "kind": "compute#instance",
   "labelFingerprint": "42WmSpB8rSM=",
-  "lastStartTimestamp": "2022-12-21T15:25:45.002-08:00",
+  "lastStartTimestamp": "2022-12-21T16:59:47.819-08:00",
   "machineType": "projects/soy-meridian-372320/zones/europe-west1-b/machineTypes/e2-medium",
   "metadata": {
-    "fingerprint": "to8MIdqkRqc=",
+    "fingerprint": "14cCe6u5aF0=",
     "kind": "compute#metadata",
     "items": [
       {
-        "value": "apt update\ncurl --output spark.tgz https://dlcdn.apache.org/spark/spark-3.3.1/spark-3.3.1-bin-hadoop3.tgz\nsudo apt -y install default-jdk\ntar -xzvf spark.tgz\n./spark-3.3.1-bin-hadoop3/sbin/start-slave.sh spark://spark-m.europe-west1-b.c.soy-meridian-372320.internal:7077",
+        "value": "sudo apt update\ncurl --output spark.tgz https://dlcdn.apache.org/spark/spark-3.3.1/spark-3.3.1-bin-hadoop3.tgz\nsudo apt -y install default-jdk\ntar -xzvf spark.tgz\n./spark-3.3.1-bin-hadoop3/sbin/start-slave.sh spark://spark-m.europe-west1-b.c.soy-meridian-372320.internal:7077",
         "key": "startup-script"
-      },
-      {
-        "value": "ogulcansarioglu1:ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBHCF+WwagbKWFXjBCdq3g9O5/bA/SeTMnKftUK4NCc+G0PAjouDy00H+ASxEl09FCmB6lCsiMLWzJ0V8Q3yOWbU= google-ssh {\"userName\":\"ogulcansarioglu1@gmail.com\",\"expireOn\":\"2022-12-21T23:30:30+0000\"}\nogulcansarioglu1:ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCQEs2dn26hyKrOC9+wFEE+stY4vuqXSAdgnk/sCxvP/Bg24azJFDnVf0kjK7gFgYr+G0qAv3rLDdg4KbCgL/QBsqHAjTM4j4sF1oOeW/S7DCDzi3Aqbh/l64WoGB4kLZiQ47XxK0za8DQliL0hEpQomWvCfped99sj+seHlyWMuv/XyY2iNO+nGSHPTVnbhlGS7E1ikf4ATkXAdtbwRir+NVrk1/cWBmW7UezHj4Db/T0xovdzD6mhCbNnzEc2QPj7fFQuWeq+mrBhsasncmVGdACSDsSVZpEpkW5iHeKlgbi5XLZpFOaonFTjcM/PyXXJfbCpryQliFtIyZs3nRZB google-ssh {\"userName\":\"ogulcansarioglu1@gmail.com\",\"expireOn\":\"2022-12-21T23:30:45+0000\"}",
-        "key": "ssh-keys"
       }
     ]
   },
-  "name": "slave-m",
+  "name": "slavem-3",
   "networkInterfaces": [
     {
       "stackType": "IPV4_ONLY",
@@ -70,14 +66,14 @@
         {
           "name": "External NAT",
           "type": "ONE_TO_ONE_NAT",
-          "natIP": "35.187.66.55",
+          "natIP": "34.140.205.66",
           "kind": "compute#accessConfig",
           "networkTier": "PREMIUM"
         }
       ],
       "subnetwork": "projects/soy-meridian-372320/regions/europe-west1/subnetworks/default",
-      "networkIP": "10.132.0.8",
-      "fingerprint": "vrZvrvxE7HA=",
+      "networkIP": "10.132.0.9",
+      "fingerprint": "xfNK0UNM7Hc=",
       "kind": "compute#networkInterface"
     }
   ],
@@ -92,7 +88,7 @@
     "instanceTerminationAction": "STOP",
     "preemptible": true
   },
-  "selfLink": "projects/soy-meridian-372320/zones/europe-west1-b/instances/slave-m",
+  "selfLink": "projects/soy-meridian-372320/zones/europe-west1-b/instances/slavem-3",
   "serviceAccounts": [
     {
       "email": "935854907108-compute@developer.gserviceaccount.com",
